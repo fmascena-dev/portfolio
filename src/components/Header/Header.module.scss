@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background-color: #0b9fb9;
+  background-color: #444;
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
 }
@@ -14,7 +14,7 @@
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 1);
+  box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
 }
 
 .hamburger {
@@ -93,7 +93,7 @@
 }
 
 .box:hover {
-  box-shadow: 1px 1px 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
 }
 
 .box::before, .box::after {
