@@ -8,31 +8,46 @@ main {
 }
 
 section > div {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
 
-    h2 {
-        font-size: 1.5rem;
-    }
+  h2 {
+    font-size: 1.5rem;
+  }
 
-    h1 {
-        color: #00d9ff;
-        font-weight: 700;
-        font-size: 3rem;
-        margin: 0.6rem 0;
-    }
-    
-    p {
-        text-align: justify;
-        font-size: 1.3rem;
-        font-weight: 500;
-    }
+  h1 {
+    color: #00d9ff;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0.8rem 0;
+    filter: drop-shadow(0px 1px 8px rgb(0, 225, 255));
+    animation: filter 3s ease-in-out infinite;
 
-    span {
-        color: #00d9ff;
-        font-weight: bold;
+    @keyframes filter {
+      0% {
+        filter: drop-shadow(20px 0px 10px rgba(0, 225, 255, 0.3));
+      }
+      50% {
+        filter: drop-shadow(20px 0px 10px rgba(0, 225, 255, 0.6));
+      }
+      100% {
+        filter: drop-shadow(20px 0px 10px rgba(0, 225, 255, 1));
+      }      
     }
+  }
+
+  p {
+    text-align: justify;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  span {
+    color: #00d9ff;
+    font-weight: bold;
+  }
 }
 
 figure > img {
