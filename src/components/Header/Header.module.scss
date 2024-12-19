@@ -7,7 +7,34 @@
   padding: 2rem;
   background-color: #444;
   position: relative;
-  box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
+  
+  // Define o pseudo-elemento para a borda animada
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; // Altura da borda
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      rgba(11, 159, 186, 1) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: slide-border 2s linear infinite;
+  }
+}
+
+// Keyframes para animar o gradiente
+@keyframes slide-border {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
 }
 
 .logo {
@@ -15,7 +42,22 @@
   height: 70px;
   border-radius: 50%;
   box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
+  animation: pulse-box-shadow 2s ease-in-out infinite;
 }
+
+// Animação para o efeito de aparecer e sumir
+@keyframes pulse-box-shadow {
+  0% {
+    box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0); // Invisível
+  }
+  50% {
+    box-shadow: 1px 1px 20px 5px rgba(11, 159, 186, 1); // Máxima intensidade
+  }
+  100% {
+    box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0); // Invisível novamente
+  }
+}
+
 
 .hamburger {
   display: none;
@@ -94,6 +136,7 @@
 
 .box:hover {
   box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 1);
+  transition: box-shadow 0.7s ease-in-out;
 }
 
 .box::before, .box::after {

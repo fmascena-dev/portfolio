@@ -3,7 +3,7 @@ import foto from '../../assets/Images/foto-pessoal.jpg';
 
 export default function Home() {
   return (
-    <main>
+    <main id="home">
       <section>
         <div>
           <h2>Olá, eu sou</h2>

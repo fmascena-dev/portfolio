@@ -1,3 +1,11 @@
+Sou <span>desenvolvedor web frontend</span> com sólida experiência
+            em HTML, CSS, Sass, Styled-components, JavaScript, React e Vue.js.
+            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e
+            Engenharia de Software. Estou sempre em busca de aprendizado, com
+            foco em aprimorar minhas habilidades e conhecimentos. Atualmente,
+            estudo TypeScript e Angular, além de me aprofundar cada vez mais em
+            React.
+
 Sobre Mim:
 Venho de uma carreira na área de logística, onde atuei como conferente e posteriormente como encarregado geral. Nessas posições, desenvolvi habilidades essenciais como análise crítica, pensamento estratégico e a capacidade de encontrar soluções rápidas para problemas. Hoje, aplico essas competências na minha jornada como desenvolvedor web frontend. Com uma base sólida em HTML, CSS, Sass, Styled-components, JavaScript, React e Vue.js, e atualmente aprofundando meus conhecimentos em TypeScript e Angular, estou sempre pronto para aprender e enfrentar novos desafios. Estou cursando Análise e Desenvolvimento de Sistemas e Engenharia de Software, buscando continuamente melhorar minhas habilidades e contribuir efetivamente para projetos inovadores.
 
@@ -5,5 +13,5 @@ Venho de uma carreira na área de logística, onde atuei como conferente e poste
 
 # Protfólio Pessoal
 
-Projeto do meu portfólio pessoal para apresentação pessoal e de meus projetos utilizando a biblioteca React, fazendo uso da componentização, SCSS, biblioteca Swiper, React Router DOM, React Icons.
+Projeto do meu portfólio pessoal para apresentação pessoal e de meus projetos utilizando a biblioteca React, fazendo uso da componentização, SCSS, biblioteca Swiper, React Router DOM, React Icons e o Framer Motion para uma navegação mais suave e dinâmica.
 

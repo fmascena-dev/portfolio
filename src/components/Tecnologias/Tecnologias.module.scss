@@ -1,0 +1,74 @@
+.tecnologias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #444;
+  padding: 2rem;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  margin: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+
+  // Início - somente o ícone é visível
+  svg {
+    font-size: 3rem;
+    color: #3498db;
+    transition: transform 0.3s ease;
+  }
+
+  figcaption,
+  p {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-10px); // Efeito de elevação ao passar o mouse
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+    svg {
+      transform: scale(1.2); // Efeito de ampliação do ícone ao passar o mouse
+    }
+
+    figcaption,
+    p {
+      display: block;
+      opacity: 1;
+    }
+  }
+}
+
+figcaption {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}

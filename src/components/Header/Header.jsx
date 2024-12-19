@@ -36,7 +36,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              to="/technologies"
+              to="/tecnologias"
               className={({ isActive }) =>
                 isActive ? styles.active : undefined
               }
@@ -46,7 +46,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              to="/projects"
+              to="/projetos"
               className={({ isActive }) =>
                 isActive ? styles.active : undefined
               }
@@ -56,7 +56,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="/contato"
               className={({ isActive }) =>
                 isActive ? styles.active : undefined
               }
@@ -66,7 +66,7 @@ export default function Header() {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/sobre"
               className={({ isActive }) =>
                 isActive ? styles.active : undefined
               }

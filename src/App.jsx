@@ -1,19 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Tecnologias from './components/Tecnologias/Tecnologias.jsx';
+import './App.module.scss';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
       <Routes>
-        {' '}
-        <Route path="/" element={<Home />} />{' '}
-        {/* <Route path="/tecnologias" element={<Tecnologias />} />{' '}
-        <Route path="/projetos" element={<Projetos />} />{' '}
-        <Route path="/contato" element={<Contato />} />{' '}
-        <Route path="/sobre" element={<SobreMim />} />{' '} */}
+        <Route path="/" element={<Home />} />
+        <Route path="/tecnologias" element={<Tecnologias />} />
+        {/* <Route path="/projetos" element={<Projetos />} /> */}
+        {/* <Route path="/contato" element={<Contato />} /> */}
+        {/* <Route path="/sobre" element={<SobreMim />} /> */}
       </Routes>
     </BrowserRouter>
   );
