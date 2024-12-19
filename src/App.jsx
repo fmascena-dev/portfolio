@@ -10,10 +10,10 @@ export default function App() {
       <Routes>
         {' '}
         <Route path="/" element={<Home />} />{' '}
-        {/* <Route path="/technologies" element={<Technologies />} />{' '}
-        <Route path="/projects" element={<Projects />} />{' '}
-        <Route path="/contact" element={<Contact />} />{' '}
-        <Route path="/about" element={<About />} />{' '} */}
+        {/* <Route path="/tecnologias" element={<Tecnologias />} />{' '}
+        <Route path="/projetos" element={<Projetos />} />{' '}
+        <Route path="/contato" element={<Contato />} />{' '}
+        <Route path="/sobre" element={<SobreMim />} />{' '} */}
       </Routes>
     </BrowserRouter>
   );

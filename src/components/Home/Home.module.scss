@@ -1,6 +1,44 @@
 main {
-    background-color: #444;
-    color: #FFF;
-    display: flex;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  padding: 5rem;
+  justify-content: center;
+  align-items: center;
 }
 
+section > div {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        color: #00d9ff;
+        font-weight: 700;
+        font-size: 3rem;
+        margin: 0.6rem 0;
+    }
+    
+    p {
+        text-align: justify;
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+
+    span {
+        color: #00d9ff;
+        font-weight: bold;
+    }
+}
+
+figure > img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin-right: 1rem;
+  border-radius: 50%;
+}

@@ -1,4 +1,5 @@
-import './Home.module.scss'
+import './Home.module.scss';
+import foto from '../../assets/Images/foto-pessoal.jpg';
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <figure>
+        <img src={foto} alt="foto de perfil" />
+      </figure>
     </main>
   );
 }
