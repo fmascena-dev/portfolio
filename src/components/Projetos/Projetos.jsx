@@ -1,5 +1,6 @@
 import { FaGithub } from 'react-icons/fa';
 import { TbWorldShare } from 'react-icons/tb';
+import './ProjetosStyles.scss';
 
 export default function Projetos() {
   const Projects = [
@@ -60,32 +61,32 @@ export default function Projetos() {
   ];
 
   return (
-    <main className="card-container">
-      {Projects.map((project) => (
-        <div key={project.id} className="card">
-          <div className="img-content">
-            <img src={project.img} alt="foto do projeto" />
+    <main id="projetos">
+      <section className="card-container">
+        {Projects.map((project) => (
+          <div key={project.id} className="card">
+            <div className="card-image">
+              <img src={project.img} alt={project.title} />
+            </div>
+            <p className="card-title">{project.title}</p>
+            <p className="card-body">{project.description}</p>
+            <div className="btns">
+              <button className="btn-github">
+                <FaGithub />
+                <a href={project.githubLink} target="_blank">
+                  GITHUB
+                </a>
+              </button>
+              <figure className="btn-page">
+                <TbWorldShare />
+                <a href={project.pageLink} target="_blank">
+                  PAGE
+                </a>
+              </figure>
+            </div>
           </div>
-          <div className="content">
-            <p className="heading">{project.title}</p>
-            <p>{project.description}</p>
-          </div>
-          <div className="btns">
-            <figure>
-              <FaGithub />
-              <a href={project.githubLink} className="btn-github">
-                GITHUB
-              </a>
-            </figure>
-            <figure>
-              <TbWorldShare />
-              <a href={project.pageLink} className="btn-page">
-                PAGE
-              </a>
-            </figure>
-          </div>
-        </div>
-      ))}
+        ))}
+      </section>
     </main>
   );
 }

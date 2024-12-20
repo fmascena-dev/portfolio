@@ -1,0 +1,136 @@
+#projetos {
+  background: #444;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Mantém os cards no topo */
+  padding: 5rem;
+  overflow-x: hidden;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  border-radius: 10px;
+}
+
+.card {
+  padding: 20px;
+  width: 30%;
+  border-radius: 20px;
+  background: #212121;
+  box-shadow: 1px 1px 10px 5px #1b1b1b;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.112);
+  box-shadow: 1px 1px 10px 5px #00d9ff;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00d9ff;
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  background-color: #313131;
+  border-radius: 1rem;
+  background: #313131;
+  box-shadow: inset 5px 5px 3px #2f2f2f, inset -5px -5px 3px #333333;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+}
+
+.card-body {
+  margin: 13px 0 0 10px;
+  color: rgba(0, 255, 255, 0.4);
+  font-size: 15px;
+}
+
+.btns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+  z-index: 2;
+}
+
+.btn-github {
+  border: 1px solid #515151;
+  padding: 0.6rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.6rem;
+  background-color: #212121;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    font-size: 2rem;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    border: 1px solid #00d9ff;
+    box-shadow: 1px 1px 10px 5px #00d9ff;
+    svg {
+      color: #00d9ff;
+    }
+    a {
+      color: #00d9ff;
+    }
+  }
+}
+
+.btn-page {
+  border: 1px solid #515151;
+  padding: 0.6rem 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 0.6rem;
+  background-color: #212121;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+
+  svg {
+    font-size: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    border: 1px solid #00d9ff;
+    box-shadow: 1px 1px 10px 5px #00d9ff;
+
+    svg {
+      color: #00d9ff;
+    }
+    a {
+      color: #00d9ff;
+    }
+  }
+}
