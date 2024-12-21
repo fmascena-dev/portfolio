@@ -2,15 +2,15 @@ main {
   background-color: #444;
   color: #fff;
   display: flex;
-  padding: 5rem;
-  justify-content: center;
+  padding: 5rem 8rem;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 section > div {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 80%;
 
   h2 {
     font-size: 1.5rem;
@@ -33,7 +33,7 @@ section > div {
       }
       100% {
         filter: drop-shadow(20px 0px 10px rgba(0, 225, 255, 1));
-      }      
+      }
     }
   }
 

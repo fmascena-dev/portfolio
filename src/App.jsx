@@ -5,11 +5,13 @@ import Tecnologias from './components/Tecnologias/Tecnologias.jsx';
 import Contato from './components/Contato/Contato.jsx';
 import Projetos from './components/Projetos/Projetos.jsx';
 import Sobre from './components/Sobre/Sobre.jsx';
+import Socials from './components/RedesSociais/Socials.jsx';
 
 export default function App() {
   return (
     <BrowserRouter>
       <Header />
+      <Socials />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tecnologias" element={<Tecnologias />} />

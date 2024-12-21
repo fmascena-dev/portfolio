@@ -18,10 +18,6 @@ export default function Contato() {
             <input required name="telefone" id="tel" type="tel" />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Título da mensagem:</label>
-            <input required name="message" id="message" type="text" />
-          </div>
-          <div className="form-group">
             <label htmlFor="textarea">Digite sua mensagem:</label>
             <textarea
               required
