@@ -43,4 +43,71 @@ figure > img {
   object-fit: cover;
   margin-right: 1rem;
   border-radius: 50%;
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    display: none;
+  }
+
+  @media (min-width: 460px) and (max-width: 759px) {
+    display: none;
+  }
+
+  @media (min-width: 760px) and (max-width: 999px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (min-width: 200px) and (max-width: 459px) {
+  main {
+    padding: 1rem;
+    height: 83vh;
+  }
+
+  section > div {
+    width: 100%;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (min-width: 460px) and (max-width: 759px) {
+  main {
+    padding: 1rem;
+    height: 83vh;
+  }
+  section > div {
+    width: 100%;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
+  }
+}
+
+@media (min-width: 760px) and (max-width: 999px) {
+  main {
+    padding: 2rem;
+    height: 75vh;
+  }
 }
