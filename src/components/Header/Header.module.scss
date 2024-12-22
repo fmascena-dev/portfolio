@@ -26,10 +26,6 @@
   height: 50px;
   border-radius: 50%;
   box-shadow: 1px 1px 10px 1px rgba(0, 255, 255, 1);
-
-  &:hover {
-    scale: 1.8;
-  }
 }
 
 .hamburger {
@@ -53,7 +49,7 @@
 }
 
 .hamburger.open .bar:nth-child(1) {
-  transform: rotate(60deg) translate(5px, 9px);
+  transform: rotate(55deg) translate(5px, 9px);
 }
 
 .hamburger.open .bar:nth-child(2) {
@@ -61,7 +57,7 @@
 }
 
 .hamburger.open .bar:nth-child(3) {
-  transform: rotate(-60deg) translate(5px, -9px);
+  transform: rotate(-55deg) translate(5px, -9px);
 }
 
 .nav {
@@ -133,6 +129,7 @@
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
+    
   }
 
   .nav {
@@ -144,6 +141,7 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
+    
   }
   .box {
     width: auto;
@@ -194,7 +192,7 @@
     flex-direction: column;
     transform: translateX(100%);
   }
-
+  
   .navActive .navUl {
     transform: translateX(0);
   }
