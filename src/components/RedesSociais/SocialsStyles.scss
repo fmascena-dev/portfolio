@@ -1,11 +1,12 @@
 .FixedContacts .container {
   display: flex;
   justify-content: space-between;
+  transition: 0.5s ease-in-out;
 }
 
 .FixedContacts .contacts {
   position: fixed;
-  left: 1.5rem;
+  left: 1rem;
   bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -26,20 +27,24 @@
 .FixedContacts .contacts svg {
   font-size: 1.8rem;
   color: #e8e8e8;
-  transition: 0.5s ease-in-out;
 }
 
 .FixedContacts .contacts a:hover > svg {
   filter: drop-shadow(0px 1px 8px rgb(0, 225, 255));
   color: #00d9ff;
   transform: scale(1.5);
+  transition: 0.5s ease-in-out;
+}
+
+.container a {
+  transition: scale 0.5s ease-in, opacity 0.5s ease-in, filter 0.5s ease-in;
 }
 
 .container:has(a:hover) a:not(:hover) {
   scale: 0.8;
   opacity: 0.8;
   filter: blur(2px);
-  transition: 0.5s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 @media screen and (max-width: 980px) {
