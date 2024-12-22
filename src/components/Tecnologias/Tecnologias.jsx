@@ -5,7 +5,7 @@ import './TecnologiasStyle.scss';
 
 export default function Tecnologias() {
   return (
-    <main id="tecnologias">
+    <section id="tecnologias">
       <section className="section-cards">
         <div className="cards">
           <FaHtml5 />
@@ -64,6 +64,6 @@ export default function Tecnologias() {
           </p>
         </div>
       </section>
-    </main>
+    </section>
   );
 }
