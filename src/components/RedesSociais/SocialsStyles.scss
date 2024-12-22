@@ -1,32 +1,49 @@
-.FixedContacts .container{
-    display: flex;
-    justify-content: space-between;
+.FixedContacts .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.FixedContacts .contacts{
-    position: fixed;
-    left: 1.5rem;
-    bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+.FixedContacts .contacts {
+  position: fixed;
+  left: 1.5rem;
+  bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: transparent;
+  border: 1px solid #00d9ff;
+  padding: 1.5rem 0.7rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #353535;
+    box-shadow: 1px 1px 7px 3px #00d9ff;
+  }
 }
 
-.FixedContacts .contacts svg{
-    font-size: 1.8rem;
-    color: #e8e8e8;
-    transition: 0.3s ease-in-out;
+.FixedContacts .contacts svg {
+  font-size: 1.8rem;
+  color: #e8e8e8;
+  transition: 0.5s ease-in-out;
 }
 
-.FixedContacts .contacts a:hover > svg{
-    filter: drop-shadow(0px 1px 8px rgb(0, 225, 255));
-    color: #00d9ff;
-    transform: scale(1.7);
+.FixedContacts .contacts a:hover > svg {
+  filter: drop-shadow(0px 1px 8px rgb(0, 225, 255));
+  color: #00d9ff;
+  transform: scale(1.5);
+}
+
+.container:has(a:hover) a:not(:hover) {
+  scale: 0.8;
+  opacity: 0.8;
+  filter: blur(2px);
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (max-width: 980px) {
-    .FixedContacts{
-        display: none;
-    }
+  .FixedContacts {
+    display: none;
+  }
 }

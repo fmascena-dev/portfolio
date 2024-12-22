@@ -6,6 +6,7 @@ import Contato from './components/Contato/Contato.jsx';
 import Projetos from './components/Projetos/Projetos.jsx';
 import Sobre from './components/Sobre/Sobre.jsx';
 import Socials from './components/RedesSociais/Socials.jsx';
+import Footer from './components/Footer/Footer.jsx';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/contato" element={<Contato />} />
         <Route path="/sobre" element={<Sobre />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

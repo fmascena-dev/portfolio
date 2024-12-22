@@ -1,0 +1,36 @@
+.footer-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #444;
+  padding: 1rem 0;
+}
+
+.footer-frase {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 10s linear infinite;
+}
+
+.footer-frase p {
+    color: #e8e8e8;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.footer-frase span {
+  display: inline-block;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #00d9ff;
+  text-shadow: 4px 4px 30px rgba(0,255,255,0.6);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(350%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
