@@ -13,9 +13,9 @@
 }
 
 .footer-frase p {
-    color: #e8e8e8;
-    font-size: 1.7rem;
-    font-weight: 600;
+  color: #e8e8e8;
+  font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .footer-frase span {
@@ -23,7 +23,7 @@
   font-size: 1.7rem;
   font-weight: 600;
   color: #00d9ff;
-  text-shadow: 4px 4px 30px rgba(0,255,255,0.6);
+  text-shadow: 4px 4px 30px rgba(0, 255, 255, 0.6);
 }
 
 @keyframes scroll {
@@ -32,5 +32,62 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+footer > .contacts {
+  display: none;
+}
+
+@media screen and (max-width: 999px) {
+  footer > .contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border: 1px solid #00d9ff;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    border: 1px solid #00d9ff;
+    padding: 0.8rem 1.2rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #353535;
+      box-shadow: 1px 1px 7px 3px #00d9ff;
+    }
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-frase {
+    animation: none;
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    span {
+      font-size: 1.3rem;
+    }
+  }
+
+  .contacts svg {
+    font-size: 1.5rem;
+    color: #e8e8e8;
+  }
+
+  .contacts a:hover > svg {
+    filter: drop-shadow(0px 1px 8px rgb(0, 225, 255));
+    color: #00d9ff;
+    transform: scale(1.5);
+    transition: 0.5s ease-in-out;
   }
 }
