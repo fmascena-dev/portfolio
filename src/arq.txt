@@ -19,3 +19,8 @@ text-shadow: 4px 5px 0px rgba(0,0,0,0.51);
 
 Projeto do meu portfólio pessoal para apresentação pessoal e de meus projetos utilizando a biblioteca React, fazendo uso da componentização, SCSS, biblioteca Swiper, React Router DOM, React Icons e o Framer Motion para uma navegação mais suave e dinâmica.
 
+
+
+@media (min-width: 200px) and (max-width: 459px)
+@media (min-width: 460px) and (max-width: 759px)
+@media (min-width: 760px) and (max-width: 999px)

@@ -11,8 +11,21 @@
   height: 90vh;
   position: relative;
   border-radius: 10px;
-  
   overflow: hidden;
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    width: 80%;
+    height: 80vh;
+    padding: 2rem;
+  }
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 90%;
+    height: 90vh;
+  }
+  @media (min-width: 760px) and (max-width: 999px) {
+    width: 90%;
+    height: 90vh;
+  }
 }
 
 .container-card:hover {
@@ -23,6 +36,11 @@
   width: 40%;
   height: 40%;
   border-radius: inherit;
+
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .card-sobre .front-content {
@@ -36,6 +54,15 @@
   justify-content: center;
   overflow: hidden;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    width: 100%;
+    height: 100vh;
+  }
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .card-sobre .front-content img {
@@ -43,6 +70,16 @@
   height: auto;
   object-fit: cover;
   transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    width: 100%;
+    height: 100vh;
+  }
+
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 100%;
+    height: 100vh;
+  }
 }
 
 .card-sobre .front-content p {
@@ -68,11 +105,11 @@
   justify-content: center;
   text-align: center;
   gap: 10px;
-  background: linear-gradient(133deg,#2ed3cd 0%, #01505d 80%);
+  background: linear-gradient(133deg, #2ed3cd 0%, #01505d 80%);
   padding: 20px;
   color: #f3ebeb;
   line-height: 1.5;
-  border: 1px solid #00FFFF;
+  border: 1px solid #00ffff;
   border-radius: inherit;
   pointer-events: none;
   transform: translateX(-97%);
@@ -82,6 +119,18 @@
 .card-sobre .content .heading {
   font-size: 3rem;
   font-weight: 900;
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    font-size: 1.9rem;
+    font-weight: bold;
+  }
+}
+
+.card-sobre .content p {
+  @media (min-width: 200px) and (max-width: 459px) {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
 }
 
 .card-sobre:hover .content {
