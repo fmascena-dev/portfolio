@@ -2,7 +2,7 @@ import './ContatoStyles.scss';
 
 export default function Contato() {
   return (
-    <main id="contato">
+    <section id="contato">
       <div className="form-container">
         <form className="form">
           <div className="form-group">
@@ -33,6 +33,6 @@ export default function Contato() {
           </button>
         </form>
       </div>
-    </main>
+    </section>
   );
 }

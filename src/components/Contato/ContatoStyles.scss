@@ -1,5 +1,21 @@
 #contato {
   background: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  height: 120vh;
+
+   @media (min-width: 200px) and (max-width: 459px) {
+    padding: 3rem 1rem;
+   }
+   @media (min-width: 460px) and (max-width: 759px) {
+    padding: 3rem 1rem;
+   }
+   @media (min-width: 760px) and (max-width: 999px) {
+    padding: 4rem 1rem;
+    height: 150vh;
+   }
 }
 
 .form-container {
@@ -19,6 +35,24 @@
   border-radius: 1rem;
   background-size: 200% 100%;
   animation: gradient 5s ease infinite;
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    width: 100%;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  @media (min-width: 760px) and (max-width: 999px) {
+    width: 100%;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
 }
 
 @keyframes gradient {

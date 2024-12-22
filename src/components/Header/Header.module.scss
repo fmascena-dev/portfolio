@@ -8,17 +8,17 @@
   box-shadow: 1px 1px 10px 5px rgba(0, 255, 255, 1);
   animation: pulse-box-shadow 2s ease-in-out infinite;
 
-@keyframes pulse-box-shadow {
-  0% {
-    box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
+  @keyframes pulse-box-shadow {
+    0% {
+      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
+    }
+    50% {
+      box-shadow: 1px 1px 20px 5px rgba(11, 159, 186, 1);
+    }
+    100% {
+      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
+    }
   }
-  50% {
-    box-shadow: 1px 1px 20px 5px rgba(11, 159, 186, 1);
-  }
-  100% {
-    box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
-  }
-}
 }
 
 .logo {
@@ -26,6 +26,19 @@
   height: 50px;
   border-radius: 50%;
   box-shadow: 1px 1px 10px 1px rgba(0, 255, 255, 1);
+
+  @media (min-width: 200px) and (max-width: 459px) {
+    width: 50px;
+    height: 50px;
+  }
+  @media (min-width: 460px) and (max-width: 759px) {
+    width: 70px;
+    height: 70px;
+  }
+  @media (min-width: 760px) and (max-width: 999px) {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .hamburger {
@@ -99,6 +112,7 @@
   text-transform: uppercase;
   color: #fff;
   font-weight: 500;
+  text-shadow: 0px 0px 10px rgba(0, 255, 255, 1);
   border-radius: 0.9rem;
   border: 1px solid transparent;
 }
@@ -129,7 +143,6 @@
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
-    
   }
 
   .nav {
@@ -141,7 +154,10 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    
+    padding: 1rem 0;
+  }
+  .logo {
+    display: flex;
   }
   .box {
     width: auto;
@@ -156,8 +172,9 @@
     margin: 0 5px;
     background: transparent;
     text-transform: uppercase;
-    color: #fff;
-    font-weight: 500;
+    color: #e8e8e8;
+    letter-spacing: 0.5rem;
+    font-weight: bold;
     border-radius: 0.9rem;
     border: 1px solid transparent;
   }
@@ -192,7 +209,7 @@
     flex-direction: column;
     transform: translateX(100%);
   }
-  
+
   .navActive .navUl {
     transform: translateX(0);
   }
