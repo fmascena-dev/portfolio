@@ -4,22 +4,6 @@
   width: 100%;
   background-color: #444;
   padding: 1rem 0;
-  // border-top: 0.05rem solid #666;
-  box-shadow: 1px 1px 10px 5px rgba(0, 255, 255, 1);
-  animation: pulse-box-shadow 2s ease-in-out infinite;
-
-  @keyframes pulse-box-shadow {
-    0% {
-      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
-    }
-    50% {
-      box-shadow: 1px 1px 20px 5px rgba(11, 159, 186, 1);
-    }
-    100% {
-      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
-    }
-  }
-
 }
 
 .footer-frase {
