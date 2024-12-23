@@ -4,6 +4,22 @@
   width: 100%;
   background-color: #444;
   padding: 1rem 0;
+  // border-top: 0.05rem solid #666;
+  box-shadow: 1px 1px 10px 5px rgba(0, 255, 255, 1);
+  animation: pulse-box-shadow 2s ease-in-out infinite;
+
+  @keyframes pulse-box-shadow {
+    0% {
+      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
+    }
+    50% {
+      box-shadow: 1px 1px 20px 5px rgba(11, 159, 186, 1);
+    }
+    100% {
+      box-shadow: 1px 1px 10px 5px rgba(11, 159, 186, 0);
+    }
+  }
+
 }
 
 .footer-frase {
@@ -40,17 +56,20 @@ footer > .contacts {
 }
 
 @media screen and (max-width: 999px) {
+  footer {
+    border: none;
+  }
+
   footer > .contacts {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
     border: 1px solid #00d9ff;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 2rem;
     background-color: transparent;
     border: 1px solid #00d9ff;
-    padding: 0.8rem 1.2rem;
     border-radius: 2rem;
     transition: background-color 0.3s ease-in-out;
 
