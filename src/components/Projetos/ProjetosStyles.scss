@@ -58,7 +58,7 @@
   border-radius: 1rem;
   background: #313131;
   box-shadow: inset 5px 5px 3px #2f2f2f, inset -5px -5px 3px #333333;
-  
+
   img {
     width: 100%;
     object-fit: cover;
@@ -107,6 +107,7 @@
     text-decoration: none;
     color: #fff;
     transition: 0.3s ease-in-out;
+    font-size: 1.1rem;
   }
 
   &:hover {
@@ -134,7 +135,7 @@
 
 .btn-page {
   border: 1px solid #515151;
-  padding: 0.6rem 1.3rem;
+  padding: 0.6rem 1.8rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -146,12 +147,14 @@
   svg {
     font-size: 2rem;
     transition: 0.3s ease-in-out;
+    color: #e5e5e5;
   }
 
   a {
     text-decoration: none;
-    color: #fff;
+    color: #e5e5e5;
     transition: 0.3s ease-in-out;
+    font-size: 1.1rem;
   }
 
   &:hover {
