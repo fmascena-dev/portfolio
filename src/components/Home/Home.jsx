@@ -1,4 +1,4 @@
-import './Home.module.scss';
+import './HomeStyles.scss';
 import foto from '../../assets/Images/foto-pessoal.jpg';
 
 export default function Home() {
