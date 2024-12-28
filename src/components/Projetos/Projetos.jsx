@@ -6,7 +6,7 @@ export default function Projetos() {
   const Projects = [
     {
       id: 1,
-      title: 'Card Hover',
+      title: 'Projeto 1',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
@@ -15,7 +15,7 @@ export default function Projetos() {
     },
     {
       id: 2,
-      title: 'Card Hover',
+      title: 'Projeto 2',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
@@ -24,7 +24,7 @@ export default function Projetos() {
     },
     {
       id: 3,
-      title: 'Card Hover',
+      title: 'Projeto 3',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
@@ -33,7 +33,7 @@ export default function Projetos() {
     },
     {
       id: 4,
-      title: 'Card Hover',
+      title: 'Projeto 4',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
@@ -42,7 +42,7 @@ export default function Projetos() {
     },
     {
       id: 5,
-      title: 'Card Hover',
+      title: 'Projeto 5',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
@@ -51,7 +51,7 @@ export default function Projetos() {
     },
     {
       id: 6,
-      title: 'Card Hover',
+      title: 'Projeto 6',
       img: '/minha-logo.png',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus vel ipsum pulvinar fermentum non sit amet turpis. Duis condimentum, enim id cursus ultricies, sem nunc ultricies nunc, at consectetur neque dolor vel est.',
